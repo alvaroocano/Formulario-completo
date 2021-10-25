@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>FORMULARIO COMPLETO</h1>
+<form method="POST" action="http://formadorestic.com/alumnosasir2/procesaformulario_usuario.php">
+<table border=5>
+<tr>
+<td colspan=8 style="text-align:center">Formulario de usuario</td>  
+    </tr>
+     <tr>
+     <td>Introduzca su nombre</td>
+    <td><input type="text" name="nombre" placeholder="Escriba su nombre"><br></td>
+ </tr>       
+     <tr>
+     <td>Contraseña</td>
+ <td><input type="password" name="password" placeholder="Introduzca su contraseña"><br></td>
+  </tr>
+    <tr>
+     <td>Direccion</td>
+ <td><textarea name="direccion" rows="3" cols="40" placeholder="Escriba su direccion"></textarea><br></td>
+  </tr>
+  
+  <tr>
+  <td>Escoja uno o mas deportes</td>  
+  <td><input type="checkbox" id="deporte" name="deportes[]" value="Futbol">
+  <label for="deporte"> Futbol</label><br>
+  <input type="checkbox" id="deporte2" name="deportes[]" value="Baloncesto">
+  <label for="deporte2"> Baloncesto</label><br>
+  <input type="checkbox" id="deporte3" name="deportes[]" value="Curling">
+  <label for="deporte3"> Curling</label>  
+<br><input type="checkbox" id="deporte4" name="deportes[]" value="Petanca">
+  <label for="deporte4"> Petanca</label>
+<br><input type="checkbox" id="deporte5" name="deportes[]" value="Esgrima">
+  <label for="deporte5"> Esgrima</label>
+</td>  
+  </tr>
+     <tr>
+     <td>Indique su genero</td>
+ <td>
+<input type="radio" id="hombre" name="sexo" value="hombre">
+<label for="hombre">Hombre</label>
+<input type="radio" id="mujer" name="sexo" value="mujer">
+<label for="mujer">Mujer</label>
+<input type="radio" id="otro" name="sexo" value="otro">
+<label for="otro">Otro</label><br></td>
+  </tr>
+     <tr>
+     <td>Seleccione su edad</td>
+ <td><select name="edad" id="edad">
+ <option value="0">Seleccione</option>
+  <option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="+20">21+</option>
+</select></td>
+  </tr>
+  <tr>
+   <td colspan="2" style="text-aling:center"><input type="file"></td>   
+  </tr>
+ </tr>  
+<tr>
+   <td colspan="3" style="text-aling:center">
+   <input colspan=8 style="text-align:center" type="button" name="button" value="Click aqui">    
+   <input type="reset" name="reset" value="Restablecer">   
+   <input type="submit" value="Enviar">
+   </td> 
+</tr>   
+</table>
+
+</body>
+</html>
